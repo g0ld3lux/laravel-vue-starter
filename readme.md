@@ -35,6 +35,58 @@ Thank you for considering contributing to the Laravel framework! The contributio
 
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
 
+## Roles and Permissions For JWT
+
+
+#### CheckRole Middleware
+We first Assigned a User to A Role
+```
+Bouncer::assign('admin')->to($user);
+or 
+$user->assign('admin')
+```
+
+Then Declare in Our Route the required Roles We Want
+```
+Route::group([
+    'middleware' => ['roles'],
+    // We can Easily Add Roles in the Middleware
+    'roles' => ['admin', 'additionalRoles'],
+    'strict' => true, // if we want to be strick in All Roles must be Present , Optional non strict by default
+    'prefix' => 'admin'
+], function() {
+    Route::get('/' , function(){
+        return 'I have Access!';
+    });
+});
+```
+
+
+#### CheckAbilities Middleware
+Check User Abilities If He Can Perform the Action
+
+We Simply Add User The Abilities
+```
+\Bouncer::allow($user)->to('view-dashboard');
+or
+$user->allow('view-dashboard');
+```
+Then We Declare a Middleware
+```
+Route::group([
+    'middleware' => ['jwt.auth', 'abilities'],
+    'abilities' => ['view-dashboard', 'login', 'test'], // Add All the Abilities You Want
+    'abilitiesCheckStrict' => false, // Optional , Allows Non Strict Check for Abilities
+    ], function() {
+Route::get('dashboard', function() {
+   
+   return 'I got the Power!';
+
+});
+});
+```
+
+
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

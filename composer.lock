@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1aac6b0f8b2b36615613e63decb7856e",
+    "content-hash": "43dfb67a024f5b2131e3d406984b59b5",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -672,6 +672,69 @@
             "time": "2017-01-23T04:29:33+00:00"
         },
         {
+            "name": "namshi/jose",
+            "version": "7.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namshi/jose.git",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namshi/jose/zipball/89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "reference": "89a24d7eb3040e285dd5925fcad992378b82bcff",
+                "shasum": ""
+            },
+            "require": {
+                "ext-date": "*",
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": ">=5.5",
+                "symfony/polyfill-php56": "^1.0"
+            },
+            "require-dev": {
+                "phpseclib/phpseclib": "^2.0",
+                "phpunit/phpunit": "^4.5|^5.0",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "suggest": {
+                "ext-openssl": "Allows to use OpenSSL as crypto engine.",
+                "phpseclib/phpseclib": "Allows to use Phpseclib as crypto engine, use version ^2.0."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Namshi\\JOSE\\": "src/Namshi/JOSE/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Nadalin",
+                    "email": "alessandro.nadalin@gmail.com"
+                },
+                {
+                    "name": "Alessandro Cinelli (cirpo)",
+                    "email": "alessandro.cinelli@gmail.com"
+                }
+            ],
+            "description": "JSON Object Signing and Encryption library for PHP.",
+            "keywords": [
+                "JSON Web Signature",
+                "JSON Web Token",
+                "JWS",
+                "json",
+                "jwt",
+                "token"
+            ],
+            "time": "2016-12-05T07:27:31+00:00"
+        },
+        {
             "name": "nesbot/carbon",
             "version": "1.22.1",
             "source": {
@@ -1024,6 +1087,64 @@
                 "uuid"
             ],
             "time": "2016-11-22T19:21:44+00:00"
+        },
+        {
+            "name": "silber/bouncer",
+            "version": "v1.0.0-beta.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JosephSilber/bouncer.git",
+                "reference": "42e17f5fb2254a2e774ce72277799ab8455cc143"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JosephSilber/bouncer/zipball/42e17f5fb2254a2e774ce72277799ab8455cc143",
+                "reference": "42e17f5fb2254a2e774ce72277799ab8455cc143",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "5.1.20 - 5.4",
+                "illuminate/container": "5.1.20 - 5.4",
+                "illuminate/contracts": "5.1.20 - 5.4",
+                "illuminate/database": "5.1.20 - 5.4"
+            },
+            "require-dev": {
+                "illuminate/cache": "5.1.20 - 5.4",
+                "illuminate/console": "5.1.20 - 5.4",
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^4.8"
+            },
+            "suggest": {
+                "illuminate/cache": "Allows caching bouncer's database queries",
+                "illuminate/console": "Allows running registered bouncer seeders via artisan"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Silber\\Bouncer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joseph Silber",
+                    "email": "contact@josephsilber.com"
+                }
+            ],
+            "description": "Bouncer handles roles and abilities for Eloquent models.",
+            "keywords": [
+                "abilities",
+                "acl",
+                "capabilities",
+                "eloquent",
+                "laravel",
+                "permissions",
+                "roles"
+            ],
+            "time": "2017-01-25T15:18:43+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -1556,6 +1677,114 @@
             "time": "2016-11-14T01:06:16+00:00"
         },
         {
+            "name": "symfony/polyfill-php56",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php56.git",
+                "reference": "1dd42b9b89556f18092f3d1ada22cb05ac85383c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php56/zipball/1dd42b9b89556f18092f3d1ada22cb05ac85383c",
+                "reference": "1dd42b9b89556f18092f3d1ada22cb05ac85383c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-util": "~1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php56\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 5.6+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14T01:06:16+00:00"
+        },
+        {
+            "name": "symfony/polyfill-util",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-util.git",
+                "reference": "746bce0fca664ac0a575e465f65c6643faddf7fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-util/zipball/746bce0fca664ac0a575e465f65c6643faddf7fb",
+                "reference": "746bce0fca664ac0a575e465f65c6643faddf7fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Util\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony utilities for portability of PHP codes",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compat",
+                "compatibility",
+                "polyfill",
+                "shim"
+            ],
+            "time": "2016-11-14T01:06:16+00:00"
+        },
+        {
             "name": "symfony/process",
             "version": "v3.2.6",
             "source": {
@@ -1855,6 +2084,71 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2016-09-20T12:50:39+00:00"
+        },
+        {
+            "name": "tymon/jwt-auth",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tymondesigns/jwt-auth.git",
+                "reference": "35132a71869d5231ef99cde95a8ce0bd8d0b6b08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/35132a71869d5231ef99cde95a8ce0bd8d0b6b08",
+                "reference": "35132a71869d5231ef99cde95a8ce0bd8d0b6b08",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/auth": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/contracts": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/http": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/support": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "namshi/jose": "^7.0",
+                "nesbot/carbon": "^1.0",
+                "php": "^5.5.9 || ^7.0"
+            },
+            "require-dev": {
+                "cartalyst/sentinel": "2.0.*",
+                "illuminate/console": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/database": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "illuminate/routing": "5.1.* || 5.2.* || 5.3.* || 5.4.*",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tymon\\JWTAuth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Tymon",
+                    "email": "tymon148@gmail.com",
+                    "homepage": "http://tymon.xyz",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Web Token Authentication for Laravel and Lumen",
+            "homepage": "https://github.com/tymondesigns/jwt-auth",
+            "keywords": [
+                "Authentication",
+                "JSON Web Token",
+                "auth",
+                "jwt",
+                "laravel"
+            ],
+            "time": "2017-02-11T19:49:59+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -3382,7 +3676,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "silber/bouncer": 10,
+        "tymon/jwt-auth": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

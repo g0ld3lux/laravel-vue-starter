@@ -4,18 +4,24 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Mutators\UserMutator;
+use Silber\Bouncer\Database\HasRolesAndAbilities;
+use Tymon\JWTAuth\Contracts\JWTSubject as AuthenticatableUserContract;
 
-class User extends Authenticatable
+class User extends Authenticatable implements AuthenticatableUserContract
 {
-    use Notifiable;
+    use Notifiable, UserMutator, HasRolesAndAbilities;
 
+    protected $table = 'users';
+
+    public $incrementing = false;
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'first_name', 'last_name', 'email', 'username', 'password'
     ];
 
     /**
@@ -24,6 +30,30 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'password', 'remember_token',
+        'password', 'remember_token'
     ];
+
+    protected $casts = [
+        'verified' => 'boolean',
+        'activated' => 'boolean',
+        'banned' => 'boolean',
+        'on_trial' => 'boolean',
+        'subscribed' => 'boolean',
+        'settings' => 'array'
+    ];
+    protected $dates = ['deleted_at', 'created_at', 'updated_at'];
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey(); 
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [
+             'user' => [ 
+                'id' => $this->id,
+             ]
+        ];
+    }
 }
