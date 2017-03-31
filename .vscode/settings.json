@@ -1,0 +1,49 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "terminal.integrated.fontFamily": "DejaVuSansMonoForPowerline NF",
+    "terminal.integrated.fontSize": 16,
+    "window.zoomLevel": 1,
+    "editor.fontFamily": "DejaVuSansMonoForPowerline NF",
+    "editor.fontSize": 19,
+    "editor.fontLigatures": true,
+    // Fix the bug on Blade Not Highlighting pair html tag
+    "files.associations": {
+    "*.vue": "vue",
+    "*.blade.php": "html"
+    },
+    "emmet.syntaxProfiles": {
+        // I disable Blade Since im Using Vue Template
+        "blade": "html",
+        "vue-html": "html"
+    },
+    // Add the Following In Your Packages.json to use this
+    // "babel-eslint"
+    // "eslint":
+    // "eslint-config-standard"
+    // "eslint-plugin-html"
+    
+    "eslint.validate": [ "javascript", "javascriptreact", { "language": "html", "autoFix": true } ],
+    "workbench.iconTheme": null,
+    // Auto rename HTML tags
+    "auto-rename-tag.activationOnLanguage": [
+        "html",
+        "xml",
+        "php",
+        "javascript",
+        "blade"
+    ],
+
+    
+
+    // Exclude Vendor Folders During Search and Replace
+    "files.watcherExclude": {
+    "**/vendor/**": true
+    },
+    "search.exclude": {
+        "**/vendor/**": true
+    },
+    "stylelint.enable": true,
+    "css.validate": false,
+    "eslint.autoFixOnSave": true
+
+}

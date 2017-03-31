@@ -106,8 +106,43 @@ trait UserMutator
         return self::whereUsername($username)->firstOrFail();
     }
 
+    public static function findByEmail($email)
+    {
+        return self::whereEmail($email)->firstOrFail();
+    }
+
     public static function findByCode($code)
     {
         return self::whereCode($code)->firstOrFail();
+    }
+
+    public function getJWTIdentifier()
+    {
+        return $this->getKey(); 
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [
+             'user' => [ 
+                'id' => $this->id,
+             ]
+        ];
+    }
+
+    public function scopeWhereCan($query, $ability)
+    {
+    $query->where(function ($query) use ($ability) {
+        // direct
+        $query->whereHas('abilities', function ($query) use ($ability) {
+            $query->byName($ability);
+        });
+        // through roles
+        $query->orWhereHas('roles', function ($query) use ($ability) {
+             $query->whereHas('abilities', function ($query) use ($ability) {
+                 $query->byName($ability);
+             });
+         });
+     });
     }
 }

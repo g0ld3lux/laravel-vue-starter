@@ -2,7 +2,7 @@
 
 namespace App\Observers;
 
-use App\User;
+use App\Models\Auth\User;
 use Keygen;
 use Hash;
 

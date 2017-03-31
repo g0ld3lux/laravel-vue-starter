@@ -1,12 +1,13 @@
 <?php
 
-namespace App;
+namespace App\Models\Auth;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Mutators\UserMutator;
 use Silber\Bouncer\Database\HasRolesAndAbilities;
 use Tymon\JWTAuth\Contracts\JWTSubject as AuthenticatableUserContract;
+use App\Notifications\PasswordResetNotification;
 
 class User extends Authenticatable implements AuthenticatableUserContract
 {
@@ -43,17 +44,9 @@ class User extends Authenticatable implements AuthenticatableUserContract
     ];
     protected $dates = ['deleted_at', 'created_at', 'updated_at'];
 
-    public function getJWTIdentifier()
+    // Override the Built In PasswordResetNotification by Laravel
+    public function sendPasswordResetNotification($token)
     {
-        return $this->getKey(); 
-    }
-
-    public function getJWTCustomClaims()
-    {
-        return [
-             'user' => [ 
-                'id' => $this->id,
-             ]
-        ];
+        $this->notify(new PasswordResetNotification($token));
     }
 }

@@ -40,6 +40,7 @@ class CheckRoles
 
     private function getAuthenticatedUser()
     {
+        // Auth User is From Token
         if (! $user = Auth::user()) {
             return response()->json([
         'message' => 'User Not Found',
@@ -49,28 +50,24 @@ class CheckRoles
     }
     private function isStrict()
     {
-        return isset(request()->route()->getAction()['rolesCheckStrict']) ? request()->route()->getAction()['rolesCheckStrict'] : false;
+        return isset(request()->route()->getAction()['rolesStrict']) ? request()->route()->getAction()['rolesStrict'] : false;
     }
     private function hasRequiredRoles($user, $roles)
     {
+        // If User is Super Admin , Has '*' Wildcard Abilities
+        if($user->can('*'))
+        {
+            return true;
+        }
+        // by Default Role Check is Non Strict, At Least One Role is Present it will Return True
         if(!$this->isStrict())
         {
             foreach($roles as $role)
             {
-              return $user->isA($role);  
+              return $user->isA($role);
             }
         }
-        elseif($this->isStrict()){
-
-            foreach($roles as $role)
-            {
-             if($user->isNotA($role))
-             {
-                return false;
-             }
-            }
-            return true;
-        }
-        
+        // If Strick is Check then All Roles Must be present
+        return \Bouncer::is($user)->all(...$roles);
     }
 }

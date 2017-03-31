@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Laravel',
+    'name' => env('APP_NAME', 'Laravel'),
 
     /*
     |--------------------------------------------------------------------------
@@ -170,6 +170,7 @@ return [
         Silber\Bouncer\BouncerServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
+        Dingo\Api\Provider\LaravelServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -231,6 +232,8 @@ return [
         'Bouncer' => Silber\Bouncer\BouncerFacade::class,
         'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
+        'DApi' => Dingo\Api\Facade\API::class,
+        'DRoute' => Dingo\Api\Facade\Route::class,
     ],
 
 ];
