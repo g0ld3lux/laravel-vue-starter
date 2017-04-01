@@ -25,7 +25,7 @@ $api->version('v1', function ($api) {
         $api->group(['middleware' => ['roles'],
         'roles' => ['admin','manager'],
         'rolesStrict' => true,
-        'prefix' => 'roles'
+        'prefix' => 'admin'
          ],function ($api) {
          $api->get('/', function(){
         return 'Im an Admin HooRaaaah!';});

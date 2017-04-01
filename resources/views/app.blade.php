@@ -5,32 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-        <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-        
+        <title>My Laravel App</title>
+
     </head>
-    <script>
-    window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1758152971123159', // Fetch this Inside OUr Config
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-    FB.AppEvents.logPageView();
-  };
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-    </script>
+    @include('partials.fb')
     <body>
         <div id="app">
-            <example></example>
-            <div class="text-center"><facebook></facebook></div>
+            <transition name="fade" mode="out-in">
+            <keep-alive>
+            <router-view></router-view>
+            </keep-alive>
+            </transition>
         </div>
-        <script src="{{ mix('js/app.js') }}"></script>
+        <script type="text/javascript" src="/js/manifest.js"></script>
+        <script type="text/javascript" src="/js/vendor.js"></script>
+        <script type="text/javascript" src="/js/app.js"></script>
     </body>
 </html>

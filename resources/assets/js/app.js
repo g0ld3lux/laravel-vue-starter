@@ -1,21 +1,45 @@
+import './bootstrap'
+import 'babel-polyfill'
+import Vue from 'vue'
+import router from './routes'
+import store from './vuex/store/'
+import { sync } from 'vuex-router-sync'
+sync(store, router)
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+// Define All Global Components
+// Vue.component('example', require('./components/Example.vue'))
+// Vue.component('facebook', require('./components/Facebook.vue'))
 
-require('./bootstrap');
+// Define Main Vue Instance
+new Vue({
+  // router holds our view and layouts
+  router,
+  // store holds our state throughout our application
+  store,
+  // All Vue Js Life Cyle Hooks
+  beforeCreate () {
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+  },
+  created () {
 
-Vue.component('example', require('./components/Example.vue'));
-Vue.component('facebook', require('./components/Facebook.vue'));
+  },
+  beforeMount () {
 
-const app = new Vue({
-    el: '#app'
-});
+  },
+  mounted () {
+
+  },
+  beforeUpdate () {
+
+  },
+  updated () {
+
+  },
+  beforeDestroy () {
+
+  },
+  destroyed () {
+
+  }
+
+}).$mount('#app')

@@ -1,4 +1,6 @@
 {
+  "name": "g0ld3lux",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -8,33 +10,36 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-eslint": "^7.1.1",
-    "babel-loader": "^6.4.0",
+    "babel-core": "^6.24.0",
+    "babel-eslint": "^7.2.1",
+    "babel-loader": "^6.4.1",
     "babel-plugin-syntax-async-functions": "^6.13.0",
     "babel-plugin-transform-regenerator": "^6.22.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-stage-2": "^6.22.0",
-    "cross-env": "^3.2.3",
-    "css-loader": "^0.27.2",
-    "eslint": "^3.17.1",
+    "cross-env": "^4.0.0",
+    "css-loader": "^0.28.0",
+    "eslint": "^3.19.0",
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-async-await": "^0.0.0",
     "eslint-plugin-vue": "^2.0.1",
-    "laravel-mix": "^0.8.8",
-    "style-loader": "^0.13.2",
+    "laravel-mix": "^0.10.0",
+    "style-loader": "^0.16.1",
     "stylelint-scss": "^1.4.3",
-    "vue-loader": "^11.1.4"
+    "vue-loader": "^11.3.4"
   },
   "dependencies": {
     "axios": "^0.15.3",
-    "element-ui": "^1.2.4",
+    "jquery": "^3.2.1",
     "lodash": "^4.17.4",
-    "vue": "^2.2.2",
-    "vue-router": "^2.3.0",
+    "moment": "^2.18.1",
+    "vee-validate": "^2.0.0-beta.25",
+    "vue": "^2.2.6",
+    "vue-blu": "^0.1.9",
+    "vue-facebook-signin-button": "^1.0.1",
+    "vue-router": "^2.3.1",
     "vue-timeago": "^3.3.0",
     "vuex": "^2.2.1",
-    "vuex-router-sync": "^4.1.2",
-    "vue-facebook-signin-button": "^1.0.1"
+    "vuex-router-sync": "^4.1.2"
   }
 }
