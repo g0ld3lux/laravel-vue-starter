@@ -3,7 +3,9 @@
 return [
 
     'sign_up' => [
-        'release_token' => env('SIGN_UP_RELEASE_TOKEN'),
+        // If You want User a New User Given a New Token
+        // This Will Log in the User to the App
+        'release_token' => env('SIGN_UP_RELEASE_TOKEN', false),
         'validation_rules' => [
             'first_name' => 'required',
             'last_name' => 'required',
@@ -27,6 +29,8 @@ return [
     ],
 
     'reset_password' => [
+        // If You Want the User Who Request Reset be Login
+        // He Will be Given a Token
         'release_token' => env('PASSWORD_RESET_RELEASE_TOKEN', false),
         'validation_rules' => [
             'token' => 'required',

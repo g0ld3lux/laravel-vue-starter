@@ -29,7 +29,7 @@ class UserTransformer extends TransformerAbstract
             'on_trial'      => (bool) $user->on_trial,
             'subscribed'    => (bool) $user->subscribed,
             'resent'        => (int) $user->resent,
-            'settings'      => $user->settings
+            'settings'      => (array) $user->settings
         ];
     }
 

@@ -20,6 +20,8 @@ $api = app('Dingo\Api\Routing\Router');
 |--------------------------------------------------------------------------
 |
 */
+
+// Default Sample Middleware
 $api->version('v1', function ($api) {
     $api->group(['middleware' => ['auth:api']], function ($api) {
         $api->group(['middleware' => ['roles'],
@@ -65,4 +67,16 @@ $api->group(['prefix' => 'auth'], function($api) {
         // we get token from the url segment
         // required: email, password , and password_confirmation , token
     });
+});
+
+/*
+|--------------------------------------------------------------------------
+| User Api 
+| With Proper Transformer Set Up
+|--------------------------------------------------------------------------
+|
+*/
+$api->version('v1', function ($api) {
+$api->get('/users', ['as' => 'api.index', 'uses' => 'Api\V1\Users\Controllers\UsersController@index']);
+$api->get('/user/{id}', ['as' => 'api.index', 'uses' => 'Api\V1\Users\Controllers\UsersController@show']);
 });
