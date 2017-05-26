@@ -4,15 +4,14 @@ $api = app('Dingo\Api\Routing\Router');
 
 /*
 |--------------------------------------------------------------------------
-| Our Main Api Domain if We use api.domain.com
-| Avoid Showing the Default Site Content 
+| To Use api.domain.com
+| Make Sure to Add it on .env 
+| API_DOMAIN= and replace the API_PREFIX
 |--------------------------------------------------------------------------
 |
 */
 
-// $api->version('v1', function ($api) {
-// $api->get('/', ['as' => 'api.index', 'uses' => 'Api\DomainController@index']);
-// });
+$api->version('v1', function ($api) {
 
 /*
 |--------------------------------------------------------------------------
@@ -51,7 +50,7 @@ $api->version('v1', function ($api) {
 |--------------------------------------------------------------------------
 |
 */
-$api->version('v1', function ($api) {
+
 $api->group(['prefix' => 'auth'], function($api) {
         // Working Tested , We Added check in exception in guest middleware for Unwated Behaviour
         $api->post('check', 'Api\V1\Auth\Controllers\LoginController@check');
@@ -79,4 +78,14 @@ $api->group(['prefix' => 'auth'], function($api) {
 $api->version('v1', function ($api) {
 $api->get('/users', ['as' => 'api.index', 'uses' => 'Api\V1\Users\Controllers\UsersController@index']);
 $api->get('/user/{id}', ['as' => 'api.index', 'uses' => 'Api\V1\Users\Controllers\UsersController@show']);
+});
+
+/*
+|--------------------------------------------------------------------------
+| Wildcard Default Response in Api Routes
+|--------------------------------------------------------------------------
+|
+*/
+$api->version('v1', function ($api) {
+$api->get('/{wildcard?}', ['as' => 'api.index', 'uses' => 'Api\DomainController@index'])->where('wildcard', '[\/\w\.-]*')->name('app');
 });

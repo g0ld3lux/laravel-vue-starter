@@ -1,6 +1,6 @@
 <?php
 
-// We Will Use Vue Router Instead of Laravel Routing System
+// Entry Point For Our Vue JS App
 Route::get('/{vue?}', function () {
     return view('app');
 })->where('vue', '[\/\w\.-]*')->name('app');
