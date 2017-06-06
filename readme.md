@@ -11,7 +11,7 @@ This Starter App Uses  The Following Technology:
 
 If You :thumbsup: This Please :star2: This REPO
 
-**Sharing is Caring**  :heart:
+**Sharing is Caring**  :sparkling_heart:
 
 It Would Give me More Motivation to Update this Repo Frequently.
 
