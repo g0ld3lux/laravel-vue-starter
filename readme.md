@@ -52,26 +52,21 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
 - :candy: List of VSCODE Extensions
 [See All Usefull VS Code Extension For This Repo](./Docs/VSExtension.md)
-
 - configure your .vscode settings @ [./.vscode/settings.json](./.vscode/settings.json)
 
  - [x] [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) for Spinning Up Server Containers
 
  - [x] [NODEJS latest](https://nodejs.org/en/) for Your Asset Management (webpack and laravel mix)
 
-
- 
-
 ## :wine_glass: Installation
-
 
 ### :hammer: Using Simple ENV Set Up
 
-:ok_hand: [Check Guide Here](./Docs/SimpleENVSetUp.md)
+:closed_book: [Check Guide Here](./Docs/SimpleENVSetUp.md)
 
 
 ### :whale: Using Docker ENV Set Up
-:blue_book: [Check Guide Here](./Docs/DockerENVSetUp.md)
+:closed_book: [Check Guide Here](./Docs/DockerENVSetUp.md)
 
 ## :mailbox_with_mail: Use Post Man To Test API Endpoint
 
