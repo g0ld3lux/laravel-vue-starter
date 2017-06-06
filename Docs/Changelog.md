@@ -31,7 +31,7 @@
  - [x] SPA Using [Vue Router](https://router.vuejs.org/en/)
  - Uses Reusable Layout/Templates and Lazy Loading for performance
     - file related: 
-        - [./resources\assets\js\routes.js](../resources\assets\js\routes.js)
+        - [./resources/assets/js/routes.js](../resources/assets/js/routes.js)
  - Uses Vue Router Sync
     - file related:
         - [./resources/assets/js/app.js](../resources/assets/js/app.js) ```Added Vue Router Sync, Vuex Ready!```
