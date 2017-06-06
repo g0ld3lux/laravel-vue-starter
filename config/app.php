@@ -171,6 +171,7 @@ return [
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
         Barryvdh\Cors\ServiceProvider::class,
         Dingo\Api\Provider\LaravelServiceProvider::class,
+        SammyK\LaravelFacebookSdk\LaravelFacebookSdkServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -234,6 +235,7 @@ return [
         'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
         'DApi' => Dingo\Api\Facade\API::class,
         'DRoute' => Dingo\Api\Facade\Route::class,
+        'FB' => SammyK\LaravelFacebookSdk\FacebookFacade::class,
     ],
 
 ];

@@ -7,8 +7,7 @@ import { sync } from 'vuex-router-sync'
 sync(store, router)
 
 // Define All Global Components
-// Vue.component('example', require('./components/Example.vue'))
-// Vue.component('facebook', require('./components/Facebook.vue'))
+// Vue.component('FBSignInButton', require('./components/Facebook.vue'))
 
 // Define Main Vue Instance
 new Vue({

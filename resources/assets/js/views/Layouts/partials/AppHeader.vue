@@ -25,12 +25,13 @@
             Documentation
           </a>
           <span class="nav-item">
-            <a class="button is-primary is-inverted">
-              <span class="icon">
-                <i class="fa fa-github"></i>
-              </span>
-              <span>Download</span>
-            </a>
+            <button class="button is-primary is-medium" @click="isComponentModalActive = true">Log In</button>
+            <b-modal
+                :active.sync="isComponentModalActive"
+                :component="SignInForm"
+                :props="formProps"
+                :width="380">
+            </b-modal>
           </span>
         </div>
       </div>
@@ -68,12 +69,23 @@
 </template>
 
 <script>
+import SignInForm from '../../../components/SignInForm.vue'
     export default {
         data() {
             return {
-                'header' : 'header'
+                'header' : 'header',
+                SignInForm,
+                isComponentModalActive: false,
+                formProps: {
+                    email: '',
+                    password: ''
+                },
             }
         },
+        component: {
+        SignInForm,
+        }
+      // We Should Bind Login Button to Vuex , In Cases User is Sign in Via Fb or Normal Login
 
     }
 </script>

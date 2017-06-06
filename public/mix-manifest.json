@@ -1,6 +1,6 @@
 {
-  "/0.js": "/0.js",
-  "/js/app.js": "/js/app.js",
   "/js/vendor.js": "/js/vendor.js",
-  "/js/manifest.js": "/js/manifest.js"
+  "/js/app.js": "/js/app.js",
+  "/js/manifest.js": "/js/manifest.js",
+  "/js/guest.js": "/js/guest.js"
 }

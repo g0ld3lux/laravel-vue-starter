@@ -14,7 +14,8 @@
         "laravel/tinker": "~1.0",
         "silber/bouncer": "v1.0.0-beta.2",
         "tymon/jwt-auth": "dev-develop",
-        "dingo/api": "1.0.x@dev"
+        "dingo/api": "1.0.x@dev",
+        "sammyk/laravel-facebook-sdk": "^3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

@@ -67,6 +67,16 @@ $api->group(['prefix' => 'auth'], function($api) {
         // required: email, password , and password_confirmation , token
     });
 });
+/*
+|--------------------------------------------------------------------------
+| Facebook Auth
+|--------------------------------------------------------------------------
+|
+*/
+$api->version('v1', function ($api) {
+$api->get('fb/login', 'Api\V1\Auth\Controllers\FBLoginController@getLoginUrl');
+$api->get('fb/callback', 'Api\V1\Auth\Controllers\FBLoginController@callback');
+});
 
 /*
 |--------------------------------------------------------------------------
