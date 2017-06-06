@@ -26,6 +26,7 @@ It Would Give me More Motivation to Update this Repo Frequently.
     - [:wine_glass: Installation](#wine_glass-installation)
         - [:hammer: Using Simple ENV Set Up](#hammer-using-simple-env-set-up)
         - [:whale: Using Docker ENV Set Up](#whale-using-docker-env-set-up)
+        - [:ocean: Deployment on Digital Ocean](#ocean-deployment-on-digital-ocean)
     - [:mailbox_with_mail: Use Post Man To Test API Endpoint](#mailbox_with_mail-use-post-man-to-test-api-endpoint)
     - [:minidisc: Modular State Management With Vuex](#minidisc-modular-state-management-with-vuex)
     - [:art: Styling Your APP](#art-styling-your-app)
@@ -48,7 +49,6 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
  - [x] WSL Bash on Ubuntu or Mintty 
   - :candy: [Guide on Setting Up Mintty WSL](https://github.com/g0ld3lux/laravel-wsl-dev-machine):
-  - :candy: [Production SET UP](https://gist.github.com/g0ld3lux/4145d031bccf66404dcdb78e9c30dc11) 
 
  - [x] [VSCODE](https://code.visualstudio.com/) for Various Extension to help us In Our Development
 
@@ -69,6 +69,9 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
 ### :whale: Using Docker ENV Set Up
 :closed_book: [Check Guide Here](./Docs/DockerENVSetUp.md)
+
+### :ocean: Deployment on Digital Ocean
+candy: [Check Guide Here](https://gist.github.com/g0ld3lux/4145d031bccf66404dcdb78e9c30dc11)
 
 ## :mailbox_with_mail: Use Post Man To Test API Endpoint
 
