@@ -16,31 +16,33 @@ If You :thumbsup: This Please :star2: This REPO
 It Would Give me More Motivation to Update this Repo Frequently.
 
     
-**Table of Contents:**
+**:clipboard: Table of Contents**
 
 <!-- TOC -->
 
 - [**Laravel Starter For SPA and REST API**](#laravel-starter-for-spa-and-rest-api)
-    - [Changelogs](#changelogs)
-    - [Dev Machine Requirements :](#dev-machine-requirements-)
-    - [Installation](#installation)
-        - [Using Simple ENV Set Up](#using-simple-env-set-up)
-        - [Using Docker ENV Set Up](#using-docker-env-set-up)
+    - [:heavy_exclamation_mark: Changelogs](#heavy_exclamation_mark-changelogs)
+    - [:warning: Dev Machine Requirements :](#warning-dev-machine-requirements-)
+    - [:beginner: Installation](#beginner-installation)
+        - [:bookmark: Using Simple ENV Set Up](#bookmark-using-simple-env-set-up)
+        - [⚓️ Using Docker ENV Set Up](#⚓️-using-docker-env-set-up)
     - [Use Post Man To Test API Endpoint](#use-post-man-to-test-api-endpoint)
     - [Modular State Management With Vuex](#modular-state-management-with-vuex)
     - [Styling Your APP](#styling-your-app)
         - [Using Buefy (Bulma)](#using-buefy-bulma)
         - [Using Element Ui](#using-element-ui)
+    - [Upcoming Updates](#upcoming-updates)
+    - [:trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs](#trophy-for-feature-request-or-name_badge-issue-or-beetle-bugs)
 
 <!-- /TOC -->
 
 
 
-## Changelogs
+## :heavy_exclamation_mark: Changelogs
 
 [View Change Log Here](./Docs/Changelog.md)
 
-## Dev Machine Requirements :
+## :warning: Dev Machine Requirements :
 
  - [x] Prefered OS [Windows 10 Insider Build](https://insider.windows.com/Install/PC)/Linux/MacOS
 
@@ -52,7 +54,7 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
  - [x] [NODEJS latest](https://nodejs.org/en/) for Your Asset Management (webpack and laravel mix)
 
- #### List of VSCODE Extensions
+ #### :candy: List of VSCODE Extensions
 
 Note: Just Search it Inside Your VSCODE Application
 
@@ -73,29 +75,35 @@ Note: Just Search it Inside Your VSCODE Application
 - configure your .vscode settings @ [./.vscode/settings.json](./.vscode/settings.json)
  
 
-## Installation
+## :beginner: Installation
 
 
-### Using Simple ENV Set Up
+### :bookmark: Using Simple ENV Set Up
 
-[Check Guide Here](./Docs/SimpleENVSetUp.md)
+:ok_hand: [Check Guide Here](./Docs/SimpleENVSetUp.md)
 
 
-### Using Docker ENV Set Up
-[Check Guide Here](./Docs/DockerENVSetUp.md)
+### ⚓️ Using Docker ENV Set Up
+:whale: [Check Guide Here](./Docs/DockerENVSetUp.md)
 
 ## Use Post Man To Test API Endpoint
 
-[Check Guide Here](./Docs/API.md)
+:envelope: [Check Guide Here](./Docs/API.md)
 
 ## Modular State Management With Vuex
 
-[Check Guide Here](./Docs/StateManagement.md)
+:floppy_disk: [Check Guide Here](./Docs/StateManagement.md)
 
 ## Styling Your APP
 
 ### Using Buefy (Bulma)
-[./Docs/BuefyStyling.md](./Docs/BuefyStyling.md)
+:art: [Buefy Style Guide](./Docs/BuefyStyling.md)
 
 ### Using Element Ui
-[./Docs/ElementUI.md](./Docs/ElementUi.md)
+:art: [Element Ui Style Guide](./Docs/ElementUi.md)
+
+## Upcoming Updates
+:dart: [TODOS](./Docs/Todo.md)
+
+## :trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs 
+[Request Here](https://github.com/g0ld3lux/laravel-vue-starter/issues/new)
