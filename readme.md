@@ -34,6 +34,7 @@ It Would Give me More Motivation to Update this Repo Frequently.
         - [Using Element Ui](#using-element-ui)
     - [:dart: Upcoming Updates](#dart-upcoming-updates)
     - [:trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs](#trophy-for-feature-request-or-name_badge-issue-or-beetle-bugs)
+    - [:moneybag: Love This Repo You Can Directly Support me on Patreon](#moneybag-love-this-repo-you-can-directly-support-me-on-patreon)
 
 <!-- /TOC -->
 
@@ -94,3 +95,7 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
 ## :trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs 
 :octocat: [Request Here](https://github.com/g0ld3lux/laravel-vue-starter/issues/new)
+
+
+## :moneybag: Love This Repo You Can Directly Support me on Patreon
+[Become a Patron](https://www.patreon.com/codeitlikemiley)
