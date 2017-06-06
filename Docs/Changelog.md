@@ -113,7 +113,7 @@
         - [./app/Observers/UserObserver.php](../app/Observers/UserObserver.php) ```Listen When User Is Creating and Generate Unique ID if FBID Not Set```
  - Added Fb Login Authentication Routes
     - file related:
-        - [./api/V1/Auth/Controllers/FbLoginController.php](../api/V1/Auth/Controllers/FbLoginController.php) ```Added Web Based Authentication for FB```
+        - [./api/V1/Auth/Controllers/FbLoginController.php](../api/V1/Auth/Controllers/LoginController.php) ```Added Web Based Authentication for FB```
  - Added Fb login Global Component
     - file related:
         - [./resources/assets/js/components/FbLogin.vue](../resources/assets/js/components/FbLogin.vue)```Added Client Side Authentication For FB```
