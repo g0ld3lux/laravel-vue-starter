@@ -23,15 +23,15 @@ It Would Give me More Motivation to Update this Repo Frequently.
 - [**Laravel Starter For SPA and REST API**](#laravel-starter-for-spa-and-rest-api)
     - [:heavy_exclamation_mark: Changelogs](#heavy_exclamation_mark-changelogs)
     - [:warning: Dev Machine Requirements :](#warning-dev-machine-requirements-)
-    - [:beginner: Installation](#beginner-installation)
-        - [:bookmark: Using Simple ENV Set Up](#bookmark-using-simple-env-set-up)
-        - [⚓️ Using Docker ENV Set Up](#⚓️-using-docker-env-set-up)
-    - [Use Post Man To Test API Endpoint](#use-post-man-to-test-api-endpoint)
-    - [Modular State Management With Vuex](#modular-state-management-with-vuex)
-    - [Styling Your APP](#styling-your-app)
+    - [:wine_glass: Installation](#wine_glass-installation)
+        - [:hammer: Using Simple ENV Set Up](#hammer-using-simple-env-set-up)
+        - [:whale: Using Docker ENV Set Up](#whale-using-docker-env-set-up)
+    - [:mailbox_with_mail: Use Post Man To Test API Endpoint](#mailbox_with_mail-use-post-man-to-test-api-endpoint)
+    - [:minidisc: Modular State Management With Vuex](#minidisc-modular-state-management-with-vuex)
+    - [:art: Styling Your APP](#art-styling-your-app)
         - [Using Buefy (Bulma)](#using-buefy-bulma)
         - [Using Element Ui](#using-element-ui)
-    - [Upcoming Updates](#upcoming-updates)
+    - [:dart: Upcoming Updates](#dart-upcoming-updates)
     - [:trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs](#trophy-for-feature-request-or-name_badge-issue-or-beetle-bugs)
 
 <!-- /TOC -->
@@ -50,60 +50,47 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
  - [x] [VSCODE](https://code.visualstudio.com/) for Various Extension to help us In Our Development
 
+- :candy: List of VSCODE Extensions
+[See All Usefull VS Code Extension For This Repo](./Docs/VSExtension.md)
+
+- configure your .vscode settings @ [./.vscode/settings.json](./.vscode/settings.json)
+
  - [x] [Docker Community Edition for Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows) for Spinning Up Server Containers
 
  - [x] [NODEJS latest](https://nodejs.org/en/) for Your Asset Management (webpack and laravel mix)
 
- #### :candy: List of VSCODE Extensions
 
-Note: Just Search it Inside Your VSCODE Application
-
- - Auto Rename Tag
- - Docker
- - ESLint
- - HTML Class Suggestions
- - HTML CSS Support
- - HTML Snippets
- - Instant Markdown
- - ES6 Snippets
- - Laravel 5 Snippets
- - Laravel Blade Snippets
- - Material Theme
- - Vetur
- - VueHelper
-
-- configure your .vscode settings @ [./.vscode/settings.json](./.vscode/settings.json)
  
 
-## :beginner: Installation
+## :wine_glass: Installation
 
 
-### :bookmark: Using Simple ENV Set Up
+### :hammer: Using Simple ENV Set Up
 
 :ok_hand: [Check Guide Here](./Docs/SimpleENVSetUp.md)
 
 
-### ⚓️ Using Docker ENV Set Up
-:whale: [Check Guide Here](./Docs/DockerENVSetUp.md)
+### :whale: Using Docker ENV Set Up
+:blue_book: [Check Guide Here](./Docs/DockerENVSetUp.md)
 
-## Use Post Man To Test API Endpoint
+## :mailbox_with_mail: Use Post Man To Test API Endpoint
 
-:envelope: [Check Guide Here](./Docs/API.md)
+:blue_book: [Check Guide Here](./Docs/API.md)
 
-## Modular State Management With Vuex
+## :minidisc: Modular State Management With Vuex
 
-:floppy_disk: [Check Guide Here](./Docs/StateManagement.md)
+:blue_book: [Check Guide Here](./Docs/StateManagement.md)
 
-## Styling Your APP
+## :art: Styling Your APP
 
 ### Using Buefy (Bulma)
-:art: [Buefy Style Guide](./Docs/BuefyStyling.md)
+:orange_book: [Buefy Style Guide](./Docs/BuefyStyling.md)
 
 ### Using Element Ui
-:art: [Element Ui Style Guide](./Docs/ElementUi.md)
+:orange_book: [Element Ui Style Guide](./Docs/ElementUi.md)
 
-## Upcoming Updates
-:dart: [TODOS](./Docs/Todo.md)
+## :dart: Upcoming Updates
+:memo: [TODOS](./Docs/Todo.md)
 
 ## :trophy: For Feature Request or :name_badge: Issue or :beetle: Bugs 
-[Request Here](https://github.com/g0ld3lux/laravel-vue-starter/issues/new)
+:octocat: [Request Here](https://github.com/g0ld3lux/laravel-vue-starter/issues/new)
