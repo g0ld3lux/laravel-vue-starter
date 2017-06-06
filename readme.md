@@ -9,9 +9,11 @@ This Starter App Uses  The Following Technology:
 [Laradock](https://github.com/laradock/laradock) For Spinning Containers for Our Servers
 
 
-> If You Love This Please Star This REPO,So  That It Would Give me More Motivation to Update this. 
+If You :thumbsup: This Please :star2: This REPO
 
-> Always Remember Sharing is Caring  :heart: :heart: :heart: :heart: :heart:
+**Sharing is Caring**  :heart:
+
+It Would Give me More Motivation to Update this Repo Frequently.
 
     
 **Table of Contents:**
