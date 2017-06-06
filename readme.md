@@ -71,7 +71,7 @@ It Would Give me More Motivation to Update this Repo Frequently.
 :closed_book: [Check Guide Here](./Docs/DockerENVSetUp.md)
 
 ### :ocean: Deployment on Digital Ocean
-candy: [Check Guide Here](https://gist.github.com/g0ld3lux/4145d031bccf66404dcdb78e9c30dc11)
+:closed_book: [Check Guide Here](https://gist.github.com/g0ld3lux/4145d031bccf66404dcdb78e9c30dc11)
 
 ## :mailbox_with_mail: Use Post Man To Test API Endpoint
 
