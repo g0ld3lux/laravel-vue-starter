@@ -59,7 +59,7 @@ http://laravel.dev/auth/login
 ### 2.3.2. Add to Body
 ```
 email = admin@laravel.dev
-password = password
+password = superadmin
 ```
 ## 2.4. We Get the Access Token (JWT)
 
