@@ -46,11 +46,13 @@ It Would Give me More Motivation to Update this Repo Frequently.
 
  - [x] Prefered OS [Windows 10 Insider Build](https://insider.windows.com/Install/PC)/Linux/MacOS
 
- - [x] [Terminal](https://github.com/g0ld3lux/laravel-wsl-dev-machine): WSL Bash on Ubuntu or Mintty
+ - [x] WSL Bash on Ubuntu or Mintty 
+  - :candy: [Guide on Setting Up Mintty WSL](https://github.com/g0ld3lux/laravel-wsl-dev-machine):
+  - :candy: [Production SET UP](https://gist.github.com/g0ld3lux/4145d031bccf66404dcdb78e9c30dc11) 
 
  - [x] [VSCODE](https://code.visualstudio.com/) for Various Extension to help us In Our Development
 
-- :candy: List of VSCODE Extensions
+- :rainbow: List of VSCODE Extensions
 [See All Usefull VS Code Extension For This Repo](./Docs/VSExtension.md)
 - configure your .vscode settings @ [./.vscode/settings.json](./.vscode/settings.json)
 
