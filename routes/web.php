@@ -15,7 +15,7 @@ Route::group(['domain' => '{username}.'.config('app.domain')], function () {
 });
 
 Route::group(['domain' => config('app.domain')], function () {
-    Route::get('/', function ($username) {
+    Route::get('/', function () {
         return redirect('www.'.config('app.domain'));
     });
 });
