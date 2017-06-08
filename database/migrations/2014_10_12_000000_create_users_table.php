@@ -16,7 +16,6 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->unsignedBigInteger('id'); // Allows Us to use Facebook ID
             $table->unsignedBigInteger('sp_id')->nullable(); // Sponsor ID
-            $table->foreign('sp_id')->references('id')->on('users');
             $table->string('code',24);
             $table->string('first_name',32);
             $table->string('last_name',32);
