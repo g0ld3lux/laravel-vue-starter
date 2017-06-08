@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::pattern('vue', '[\/\w\.-]*');
         Route::pattern('nonwww', '[\/\w\.-]*');
-        Route::pattern('username', '\b(admin|support|api|static)\b');
+        Route::pattern('username', '^(?!.*(admin|support|api|static|superadmin|helpdesk)).*$');
         parent::boot();
     }
 
