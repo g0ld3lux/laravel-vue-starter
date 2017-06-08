@@ -31,6 +31,7 @@ class CreateUsersTable extends Migration
             $table->unsignedTinyInteger('resent')->default(0); // For Sending Password Reset Email
             $table->json('settings')->nullable();
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

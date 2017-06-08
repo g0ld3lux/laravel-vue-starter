@@ -21,8 +21,6 @@ class UserObserver
             $user->id = User::generateUniqueID();
         }
         $user->code = User::generateUniqueCode();
-
-        
     }
 
     /**

@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\Exception\HttpException;
 class ResetPasswordController extends Controller
 {
     // Redirect to Dashboard if Authenticated
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/';
 
     public function __construct()
     {

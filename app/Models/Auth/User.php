@@ -8,10 +8,11 @@ use App\Mutators\UserMutator;
 use Silber\Bouncer\Database\HasRolesAndAbilities;
 use Tymon\JWTAuth\Contracts\JWTSubject as AuthenticatableUserContract;
 use App\Notifications\PasswordResetNotification;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class User extends Authenticatable implements AuthenticatableUserContract
 {
-    use Notifiable, UserMutator, HasRolesAndAbilities;
+    use Notifiable, UserMutator, HasRolesAndAbilities, SoftDeletes;
 
     protected $table = 'users';
 
