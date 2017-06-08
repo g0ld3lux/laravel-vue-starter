@@ -13,5 +13,5 @@ Route::group(['domain' => '{username}.'.config('app.domain')], function () {
 });
 
 Route::group(['domain' => config('app.domain')], function () {
-    Route::get('/', 'DomainController@redirectNonWWWToWWW');
+    Route::get('/{slug?}', 'DomainController@redirectNonWWWToWWW')->where('vue', '[\/\w\.-]*')->name('redirectToWWW');
 });
