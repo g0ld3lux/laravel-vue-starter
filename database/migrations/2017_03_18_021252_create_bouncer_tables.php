@@ -39,7 +39,8 @@ class CreateBouncerTables extends Migration
 
         Schema::create(Models::table('assigned_roles'), function (Blueprint $table) {
             $table->integer('role_id')->unsigned()->index();
-            $table->morphs('entity');
+            $table->unsignedBigInteger('entity_id')->unsigned()->nullable();
+            $table->string('entity_type', 150)->nullable();
 
             $table->foreign('role_id')->references('id')->on(Models::table('roles'))
                   ->onUpdate('cascade')->onDelete('cascade');
@@ -47,7 +48,8 @@ class CreateBouncerTables extends Migration
 
         Schema::create(Models::table('permissions'), function (Blueprint $table) {
             $table->integer('ability_id')->unsigned()->index();
-            $table->morphs('entity');
+            $table->unsignedBigInteger('entity_id')->unsigned()->nullable();
+            $table->string('entity_type', 150)->nullable();
             $table->boolean('forbidden')->default(false);
 
             $table->foreign('ability_id')->references('id')->on(Models::table('abilities'))
