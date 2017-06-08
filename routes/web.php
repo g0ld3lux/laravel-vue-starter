@@ -10,7 +10,7 @@ Route::group(['domain' => '{username}.'.config('app.domain')], function () {
     Route::get('/', function ($username) {
         return 'this is dashboard of ' .$username; 
     });
-})->where('username','/(?!admin|api|support)([\w-]+)/');
+})->where('username', '^(?!admin|support|api)\w*');
 
 Route::group(['domain' => config('app.domain')], function () {
     Route::get('/{slug?}', 'DomainController@redirectNonWWWToWWW')->where('slug', '[\/\w\.-]*')->name('redirectToWWW');
