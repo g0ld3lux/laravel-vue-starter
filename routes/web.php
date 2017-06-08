@@ -13,3 +13,9 @@ Route::group(['domain' => '{username}.'.config('app.domain')], function () {
         return 'this is dashboard of ' .$username; 
     });
 });
+
+Route::group(['domain' => config('app.domain')], function () {
+    Route::get('/', function ($username) {
+        return redirect('www.'.config('app.domain'));
+    });
+});
