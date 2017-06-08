@@ -6,9 +6,9 @@ Route::group(['domain' => 'www.'.config('app.domain')], function () {
     Route::get('/{vue?}', 'DomainController@vueRouterCatcher')->name('app');
 });
 
-Route::group(['domain' => '{username}.'.config('app.domain')], function () {
-    Route::get('/', function ($username) {
-        return 'this is dashboard of ' .$username;
+Route::group(['domain' => '{subdomain}.'.config('app.domain')], function () {
+    Route::get('/', function ($subdomain) {
+        return 'this is dashboard of ' .$subdomain;
     });
 });
 
