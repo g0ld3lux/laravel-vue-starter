@@ -16,6 +16,11 @@ Route::group(['domain' => 'admin.'.config('app.domain')], function () {
   
 });
 
+Route::group(['domain' => '{username}.'.config('app.domain')], function () {
+    Route::get('/', function ($username) {
+        return 'this is dashboard of ' .$username; 
+    });
+});
 // Vue Router Catcher
 // Cause Unpleasant Bug, if Place on web.php so we move it here
 Route::get('/{vue?}', function () {
