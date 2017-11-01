@@ -1,7 +1,8 @@
 ## Cloaning And Installing Dependencies
 
 ```
-git clone https://github.com/g0ld3lux/laravel-starter
+git clone https://github.com/g0ld3lux/laravel-vue-starter
+cd laravel-vue-starter
 composer install
 npm install
 php artisan key:generate
